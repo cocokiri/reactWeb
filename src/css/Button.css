@@ -1,0 +1,7 @@
+button {
+  background: black;
+}
+
+button:hover {
+  background:red;
+}
