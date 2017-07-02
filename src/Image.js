@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
-import '.css/Image.css';
-// import NameField from "./NameField";
-// import ImageCaption from "./ImageCaption";
+import './css/Image.css';
+import NameField from "./NameField";
+import ImageCaption from "./ImageCaption";
 
 class Image extends Component {
     constructor(props) {
         super(props)
+        console.log(props)
+        this.state = {};
         this.myname = props.name ? <NameField name={props.name}/> : "";
         this.mycaption = props.caption ? <ImageCaption caption={props.caption}/> : "";
     }
@@ -32,9 +34,9 @@ class Image extends Component {
     render() {
         return (
             <section className="imageWrap">
-                <img className={this.props.class} id={this.state.id} src={this.props.source}
+                <img className={this.props.class} id={this.state.id} src={this.props.src}
                      onClick={() => this.handleClick()}
-                     alt="Illustration">
+                     alt="Sketch">
                 </img>
                 {this.textfield(this.myname, this.mycaption)}
             </section>

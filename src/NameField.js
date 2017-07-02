@@ -1,12 +1,9 @@
 import React, {Component} from 'react';
-import './NameField.css';
+import './css/NameField.css';
 
 function NameField (props) {
     return (
         <figcaption>{props.name}</figcaption>
     )
 }
-
-
-
 export default NameField;

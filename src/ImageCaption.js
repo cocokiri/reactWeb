@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './ImageCaption.css';
 
 function ImageCaption(props) {
     return (
@@ -9,6 +8,5 @@ function ImageCaption(props) {
         </div>
     )
 }
-
 
 export default ImageCaption;

@@ -6,13 +6,13 @@ const Wrapper = function (props) {
     const elements = [];
     props.segment.forEach(function (thumb) {
         elements.push(
-                <section className="imageWrap">
+                <div>
                     {/*<a href={thumb} target="_blank" rel="noopener noreferrer">*/}
                     <LazyLoad offsetBottom={200}>
-                        <Image size={props.size} src={thumb} alt="Sketch"/>
+                        <Image class={props.class} src={thumb.path} name={thumb.name} caption={thumb.caption}/>
                     </LazyLoad>
                     {/*</a>*/}
-                </section>
+                </div>
         )
     });
     return (

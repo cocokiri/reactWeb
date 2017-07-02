@@ -1,5 +1,6 @@
 img {
-  max-height: 25vw;
+  /*max-height: 25vw;*/
+  min-height: 50vh;
   z-index: 2;
   margin: 2em;
   margin-top: 2em;
@@ -21,7 +22,7 @@ img {
   background-color: yellow;
   text-align: center;
   padding: 1em;
-  max-width: 50%;
+  max-width: 65%;
   /*margin-top: -1em;*/
   color: rgba(50,50,50,0.9);
 
@@ -35,9 +36,12 @@ img {
 #expanded {
   min-height: 90vh;
 }
+.small {
+  max-height: 16vw;
+}
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   img {
-    max-height: 40vh;
+    min-height: 30vh;
   }
 }
