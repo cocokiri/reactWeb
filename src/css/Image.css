@@ -34,7 +34,7 @@ img {
 }
 
 #expanded {
-  min-height: 90vh;
+  min-width: 90vw;
 }
 .small {
   max-height: 16vw;
@@ -43,5 +43,6 @@ img {
 @media (max-width: 500px) {
   img {
     min-height: 30vh;
+    max-width: 90vw;
   }
 }

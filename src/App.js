@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Button from './Button';
 import HypLink from './HypLink';
 import Wrapper from './Wrapper';
+import Nav from './Nav'
 import {Link, Redirect} from 'react-router-dom'
 
 
@@ -305,16 +306,16 @@ function HeaderSplit(props) {
 }
 
 class App extends Component {
-  render() {
-    return (
-      <div>TURN
-        <Button> HEY</Button>
-        <HypLink />
-        <HypLink text="JASDSD" link="./asdasd" />
-          <Wrapper class="small" segment={images}/>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <Nav/>
+                <Wrapper class="small" segment={images}/>
+            </div>
+        );
+    }
 }
+
+
 
 export default App;
