@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './css/Button.css'
+import React from 'react';
+import './css/Button.css';
+import {Link} from 'react-router-dom'
 
 const Button = function (props) {
- return(
-     <button>BUTTON</button>
- )
+    return (
+        <button>
+            {props ? <Link to={props.linkTo}>PLAY</Link> : ''}
+        </button>
+    )
 };
 
 export default Button;

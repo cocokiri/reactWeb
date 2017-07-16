@@ -1,7 +1,26 @@
 button {
-  background: black;
+  background: repeating-linear-gradient(darkblue, blueviolet);
+  width: 80%;
+  color: white;
+  line-height: 1.5em;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 1px;
+  border: 0;
+  outline: 0;
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+@media (max-width: 850px) {
+  button {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+
 }
 
 button:hover {
   background:red;
+
 }

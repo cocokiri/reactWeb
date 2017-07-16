@@ -1,35 +1,48 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import {Router, Route, Switch, Redirect} from 'react-router-dom';
+import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
+import createBrowserHistory from 'history/createBrowserHistory';
+
+import About from "./Sketches";
+import Play from "./Play";
 import Illustrate from './Illustrate';
-import NotFound from './NotFound'
-import createHashHistory from 'history/createHashHistory';
+import NotFound from './NotFound';
+import Sketches from './Sketches';
 
 
-const history = createHashHistory();
+import Nav from './Nav';
+
+
+const history = createBrowserHistory();
 console.log(history);
 
 
-const Index = React.createClass({
+//don't use /* zuerst.... prueft Routen sequentiell
+class Index extends Component {
     render() {
         return (
-            <Router history={history}>
-                <Switch>
-                    <Route exact path="/" component={App}/>
-                    <Route path= "/*" component={NotFound} />
-                    <Route path="/illustrate" component={Illustrate}/>
-                    <Route path="/about" component={About}/>
-                    <Route path="/play" component={Play}/>
-                </Switch>
-            </Router>
+            <div>
+                <BrowserRouter history={history}>
+                    {/*<Route path="/" component={Nav} />*/}
+                    <div>
+                        <Nav/>
+                        <Switch>
+                            <Route exact path="/" component={App}/>
+                            <Route path="/illustrate" component={Illustrate}/>
+                            <Route path="/about" component={About}/>
+                            <Route path="/play" component={Play}/>
+                            <Route path="/sketch" component={Sketches}/>
+                            <Route component={NotFound}/>
+                        </Switch>
+                    </div>
+                </BrowserRouter>
+            </div>
         )
     }
-});
-
-// export default Index;
+}
 
 
 ReactDOM.render(<Index />, document.getElementById('root'));
