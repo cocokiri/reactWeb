@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const HypLink = function (props) {
     if (!props.link || !props.text) console.log("Hyplink without input")

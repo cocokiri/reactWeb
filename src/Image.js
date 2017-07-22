@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
 import './css/Image.css';
-import Button from './Button';
-import Textfield from './Textfield'
+
 
 class Image extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-        };
+        this.state = {};
     }
 
     handleClick() {
@@ -16,19 +14,16 @@ class Image extends Component {
     }
 
     render() {
+        const {path, styling, url} = this.props.data;
         return (
-            <section className="imageWrap">
-                <a className="normalA" href={this.props.url} >
-                <img className={this.props.myStyle}
+            <a className="normalA" href={url}>
+                <img className={styling}
                      id={this.state.id}
-                     src={this.props.src}
+                     src={path}
                      alt="Sketch"
-                     onClick={() => this.handleClick()} >
+                     onClick={() => this.handleClick()}>
                 </img>
-                </a>
-                {this.props.url && <Button linkTo={this.props.url}/>}
-                <Textfield title={this.props.name} text={this.props.caption} />
-            </section>
+            </a>
         )
     }
 }

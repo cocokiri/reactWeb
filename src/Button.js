@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 
 
 const Button = function (props) {
-    const link = props.linkTo;
+    const link = props.linkTo || "ala";
     let isUrl = props ?
         link.includes("www") || link.includes("http") || link.includes(".")
         : false;

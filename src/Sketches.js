@@ -200,26 +200,32 @@ let sketches = [
     sk8
 ];
 
-const notebooks = [
+const notebookPic = [
     {
         name: "Travel notebooks starting Sep. 2014",
         path: notebookpic,
         caption: `What do you always put in these notebooks?!? people ask. \n\n
         Just for fun, you can catch about ${sketches.length} glimpses here.`,
-        url: null,
+        linkTo: null,
         alt: "notebooks"
     }
 ]
 
+
 function Sketches(props) {
 
-
     return (
-        <div>
-            <Wrapper segment={notebooks}/>
+        <div className="flexContainWrap">
+            <Wrapper segment={notebookPic}/>
+            <section style={{margin: "5vw"}} />
             <section className="flexContainWrap">
-                {sketches.map(el =>
-                    <Image myStyle={'sketch'} src={el}/>)
+                {sketches.map(el => {
+                    const dat= {
+                        path: el,
+                        styling:'sketch'
+                    };
+                    return <Image data={dat}/>
+                    })
                 }
             </section>
         </div>

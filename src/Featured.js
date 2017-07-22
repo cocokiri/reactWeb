@@ -2,9 +2,16 @@ import React, {Component} from 'react';
 
 import Wrapper from './Wrapper';
 
-import piano from './gameImages/piano.png'
+import piano from './gameImages/piano.png';
 
+import Button from './Button';
+import Textfield from './Textfield';
+import LazyLoad from 'react-lazy-load';
+import Image from './Image'
+import './css/Wrapper.css';
 
+// {this.props.url && <Button linkTo={this.props.url}/>}
+// <Textfield title={this.props.name} text={this.props.caption} />
 
 const images = [
     {
@@ -25,6 +32,10 @@ class Featured extends Component {
             <div>
                 {/*{this.props.children}*/}
                 <Wrapper segment={images}/>
+                {/*<Image data={images[0]}/>*/}
+
+                {/*{this.props.url && <Button linkTo={this.props.url}/>}*/}
+                {/*<Textfield title={this.props.name} text={this.props.caption} />*/}
 
             </div>
         );

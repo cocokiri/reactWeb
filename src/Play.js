@@ -11,8 +11,9 @@ import    polyphonic    from    "./gameImages/polyphonic.png";
 import    shooter2d    from    "./gameImages/SpaceShooter_800x600.gif";
 
 import Wrapper from './Wrapper'
-import Button from './Button'
 import Image from './Image'
+import Button from './Button';
+import Textfield from './Textfield';
 
 const gameImages = [
     {
@@ -22,8 +23,8 @@ const gameImages = [
         "+ develop insane intuition" +
         "+ An interactive spectrogram that can instantly detect the note and chord(!) you are playing" +
         "+ faster & more accurate than what Yamaha, RockSmith etc. have behind the pay-wall (I checked...I know it's sad)",
-        linkTo:null,
-        url:'https://dacapo.io/polyphonic-pitch-detector',
+        linkTo: null,
+        url: 'https://dacapo.io/polyphonic-pitch-detector',
         subTitle: null,
         alt: null
     },
@@ -55,7 +56,7 @@ const gameImages = [
         caption: "Help Explorer Saint Exupery through the Rainbow Desert \n\n" +
         "+ Control plane height with pitch (voice/instrument)" + "\n\n" + "" +
         "Abandoned -- Decided against using three.js for now. Polygon config for plane was borrowed. Will ask for microphone access.",
-        url:'https://dacapo.io/little-prince/',
+        url: 'https://dacapo.io/little-prince/',
         linkTo: null,
         subTitle: null,
         alt: null
@@ -121,24 +122,27 @@ const gameImages = [
     }
 ];
 
-const bgStyle= {
+const bgStyle = {
     background: "linear-gradient(-170deg, #2376ae 0%, #c16ecf 100%)"
 }
 
 const Play = function (props) {
     return (
         <div style={bgStyle}>
-            {/*{gameImages.map(el => {*/}
-                    {/*return (*/}
-                        {/*<div class="imageWrap">*/}
-                        {/*<Image src={el.path}/>,*/}
-                        {/*</div>*/}
-                    {/*)*/}
-                {/*}*/}
-            {/*)}*/}
+            <section className="flexContain">
+                {gameImages.map(el => {
+                    return (
+                        <div className="imageWrap">
+                            <Image data={el}/>
+                            {el.url && <Button linkTo={el.url}/>}
+                            <Textfield title={el.name} text={el.caption}/>
+                        </div>
+                    )
+                })
+                }
+            </section>
 
-
-             <Wrapper segment={gameImages}/>
+            {/*<Wrapper segment={gameImages}/>*/}
         </div>
     )
 };
