@@ -7,7 +7,7 @@ nav {
   box-shadow:0 3px 4px rgba(0, 0, 0, 0.3);
   min-width: 100%;
   background: black;
-  margin-bottom: 8vh;
+  /*margin-bottom: 5vw;*/
 }
 
 nav > * {
@@ -20,17 +20,17 @@ nav > * {
 
 a {
   text-decoration: none;
-  color:white;
+  /*color:white;*/
 }
 
 a:visited {
-  color:white;
+  /*color:white;*/
 }
 
 a:hover {
-  transition-duration: 0.5s;
+  /*transition-duration: 0.5s;*/
   background-color: red;
-  color:white;
+  /*color:white;*/
 }
 
 @media (max-width: 500px) {

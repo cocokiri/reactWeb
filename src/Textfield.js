@@ -9,7 +9,7 @@ function TextField(props) { //outfactor
     if (props.text) {
         return (
             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                <figcaption style={{minWidth: '50vw'}}>
+                <figcaption >
                     {props.title}
                 </figcaption>
                 <div className="textfield">

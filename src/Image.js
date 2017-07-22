@@ -26,7 +26,7 @@ class Image extends Component {
                      onClick={() => this.handleClick()} >
                 </img>
                 </a>
-                {this.props.linkTo && <Button linkTo={this.props.linkTo}/>}
+                {this.props.url && <Button linkTo={this.props.url}/>}
                 <Textfield title={this.props.name} text={this.props.caption} />
             </section>
         )

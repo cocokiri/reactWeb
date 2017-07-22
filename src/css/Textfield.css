@@ -2,7 +2,8 @@ figcaption {
   text-align: center;
   align-self: center;
   margin-top: 0em;
-  min-width: 55vw;
+  min-width: 70vw;
+
   color: white;
   background: darkslateblue;
   border-radius: 1px;
@@ -17,7 +18,7 @@ figcaption {
   background-color: yellow;
   text-align: center;
   padding: 1em;
-  max-width: 60%;
+  max-width: 50%;
   /*margin-top: -1em;*/
   color: rgba(50,50,50,0.9);
 
