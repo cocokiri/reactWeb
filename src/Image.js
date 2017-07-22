@@ -6,8 +6,8 @@ import Textfield from './Textfield'
 class Image extends Component {
     constructor(props) {
         super(props)
-        console.log(props)
-        this.state = {};
+        this.state = {
+        };
     }
 
     handleClick() {
@@ -18,12 +18,14 @@ class Image extends Component {
     render() {
         return (
             <section className="imageWrap">
-                <img className={this.props.class}
+                <a className="normalA" href={this.props.url} >
+                <img className={this.props.myStyle}
                      id={this.state.id}
                      src={this.props.src}
                      alt="Sketch"
                      onClick={() => this.handleClick()} >
                 </img>
+                </a>
                 {this.props.linkTo && <Button linkTo={this.props.linkTo}/>}
                 <Textfield title={this.props.name} text={this.props.caption} />
             </section>

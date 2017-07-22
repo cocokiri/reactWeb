@@ -21,6 +21,5 @@ button {
 }
 
 button:hover {
-  background:red;
-
+  background:repeating-linear-gradient(orchid, orangered);;
 }

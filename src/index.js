@@ -15,9 +15,7 @@ import Sketches from './Sketches';
 
 import Nav from './Nav';
 
-
 const history = createBrowserHistory();
-console.log(history);
 
 
 //don't use /* zuerst.... prueft Routen sequentiell

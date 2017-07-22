@@ -11,7 +11,8 @@ const Wrapper = function (props) {
                 <div>
                     {/*<a href={thumb} target="_blank" rel="noopener noreferrer">*/}
                     <LazyLoad offsetBottom={200}>
-                        <Image class={props.class} src={thumb.path} name={thumb.name} caption={thumb.caption} linkTo={thumb.linkTo}/>
+                        {/*TODO JUST PUT IN OBJECT...*/}
+                        <Image class={props.class} src={thumb.path} name={thumb.name} caption={thumb.caption} linkTo={thumb.linkTo} url={thumb.url}/>
                     </LazyLoad>
                     {/*</a>*/}
                 </div>

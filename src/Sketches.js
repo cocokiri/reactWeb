@@ -3,7 +3,7 @@ import Image from './Image'
 import Textfield from './Textfield'
 import Button from './Button'
 import './css/Image.css';
-
+import Wrapper from './Wrapper'
 
 import    sk0     from    "./sketch/sketch0.jpg";
 import    sk1     from    "./sketch/sketch1.jpg";
@@ -101,16 +101,9 @@ import    sk92     from    "./sketch/sketch92.jpg";
 import    sk93     from    "./sketch/sketch93.jpg";
 
 
+import notebookpic from "./images/notebooks.jpg"
+
 let sketches = [
-    sk0,
-    sk1,
-    sk2,
-    sk3,
-    sk4,
-    sk5,
-    sk6,
-    sk7,
-    sk8,
     sk9,
     sk10,
     sk11,
@@ -196,22 +189,40 @@ let sketches = [
     sk91,
     sk92,
     sk93,
+    sk0,
+    sk1,
+    sk2,
+    sk3,
+    sk4,
+    sk5,
+    sk6,
+    sk7,
+    sk8
 ];
 
+const notebooks = [
+    {
+        name: "Travel notebooks starting Sep. 2014",
+        path: notebookpic,
+        caption: `What do you always put in these notebooks?!? people ask. \n\n
+        Just for fun, you can catch about ${sketches.length} glimpses here.`,
+        url: null,
+        alt: "notebooks"
+    }
+]
 
 function Sketches(props) {
 
 
     return (
-        <div class="imageWrap">
-            <div>
+        <div>
+            <Wrapper segment={notebooks}/>
+            <section className="flexContainWrap">
                 {sketches.map(el =>
-                    <div> <Image class={'sketch'} src={el} /> </div>)
+                    <Image myStyle={'sketch'} src={el}/>)
                 }
-            </div>
+            </section>
         </div>
-
-        // <Image class={props.class} src={thumb.path} name={thumb.name} caption={thumb.caption} linkTo={thumb.linkTo}/>
     )
 }
 

@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
-import Button from './Button';
-import HypLink from './HypLink';
 import Wrapper from './Wrapper';
-import {Link, Redirect} from 'react-router-dom'
 
 
 import circuitBody from "./images/ElectricBody.gif";
@@ -32,14 +29,15 @@ let images = [
         caption: "The Ad Man behind a mask. Anonymously blowing through his marketing channel. " +
         "Our senses too naked to defend, our hands too short to retaliate."
     },
+
     {
-        name: "Exploitation",
-        path: exploit,
-        caption: "Why stop with gestation crates and mass slaughter? Let’s use biotechnology to not only " +
-        "torture but actively humiliate fellow sentient beings. Teapot camels are a solid business model"
+        name: "Narrative Illusion",
+        path: narrativeillusion,
+        caption: "Mr. New Yorker is always looking for patterns. For him, overfitting is something only fat people have to do. " +
+        "Changing perspectives would " +
+        "cause enlightenment and get him fired. He is close friends with the Ad Man."
 
     },
-
     {
         name: "Fragmentation",
         path: female,
@@ -62,7 +60,7 @@ let images = [
     {
         name: "Animalus",
         path: anim,
-        caption: "Thanks to Peruvian coca tea"
+        caption: "5 minutes && Peruvian coca tea"
 
     },
     {
@@ -72,12 +70,12 @@ let images = [
         "Come in she said I give you shelter from the storm."
 
     },
+
     {
-        name: "Narrative Illusion",
-        path: narrativeillusion,
-        caption: "Mr. New Yorker is always looking for patterns. For him, overfitting is something only fat people have to do. " +
-        "Changing perspectives would " +
-        "cause enlightenment and get him fired. He is close friends with the Ad Man."
+        name: "Exploitation",
+        path: exploit,
+        caption: "Why stop with gestation crates and mass slaughter? Let’s use biotechnology to not only " +
+        "torture but actively humiliate fellow sentient beings. Teapot camels are a solid business model"
 
     },
     {
@@ -89,26 +87,18 @@ let images = [
     {
         name: "Circuit Physiology",
         path: circuitBody,
-        caption: "The body as electric system. See 'Induction' video"
+        caption: "The body as electric system. Explained in 'Induction' vid"
     },
     {
         name: "The Bloggersphere",
         path: bloggersphere,
-        caption: "A bunch of confused parrots recursively feeding on their excrements. They live with the " +
-        "Ad Man, but Mr. New Yorker often comes by to fish for their new'insights' "
+        caption: "A bunch of confused parrots recursively feeding off each other. They live with the " +
+        "Ad Man, but Mr. New Yorker often comes by to fish for their new 'insights' "
 
     }
 ];
 
-function HeaderSplit(props) {
-    "use strict";
-    return (
-        <h1 className="splitter"> {props.text} </h1>
-    )
-
-}
-
-class App extends Component {
+class Illustrate extends Component {
     render() {
         return (
             <div>
@@ -118,4 +108,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default Illustrate;
