@@ -13,7 +13,7 @@ const Nav = function (props) {
                 {/*<a href="/">HOME</a>*/}
                 <Link to='/'>HOME</Link>
                 <Link to='/about'>ABOUT</Link>
-                <Link to='/play'>PLAY</Link>
+                <a href='https://dacapo.io/play' >PLAY</a>
             </nav>
     )
 };

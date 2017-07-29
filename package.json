@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-easy-emoji": "^1.0.4",
     "react-lazy-load": "^3.0.12",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",

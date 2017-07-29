@@ -12,7 +12,7 @@ function TextField(props) { //outfactor
                 {props.title && <figcaption >
                     {props.title}
                 </figcaption>}
-                <div className="textfield">
+                <div className="textfield" style={props.styling}>
                     {props.text}
                 </div>
             </div>

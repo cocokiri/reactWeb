@@ -56,6 +56,8 @@ class Featured extends Component {
                     <div className="textfield"> Face the Music.
                         Space Shift Sine </div>
                 </div>
+                <div style={{margin: "2em"}} />
+
 
                 <div className="flexContainWrap" style={{flexDirection:"column"}}>
                     <Image data={images[1]}/>

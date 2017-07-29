@@ -19,21 +19,21 @@ let images = [
     {
         name: "The Theorists",
         path: theorists,
-        caption: "The theorists sit on their tetrahedron, a Platonic solid, " +
-        "discussing their elaborate models while reality is happening underneath"
+        caption: "The theorists sit on a platonic solid, " +
+        "discussing their elaborate models while reality is having something else in mind"
     },
 
     {
         name: "Advertising",
         path: adman,
-        caption: "The Ad Man behind a mask. Anonymously blowing through his marketing channel. " +
-        "Our senses too naked to defend, our hands too short to retaliate."
+        caption: "The Ad Man behind his mask. Anonymously attacking through his marketing channel. " +
+        "Our senses too naked, our hands too short."
     },
 
     {
         name: "Narrative Illusion",
         path: narrativeillusion,
-        caption: "Mr. New Yorker is always looking for patterns. For him, overfitting is something only fat people have to do. " +
+        caption: "Mr. New Yorker is always looking for patterns. He is a tailor for overly fitted stories." +
         "Changing perspectives would " +
         "cause enlightenment and get him fired. He is close friends with the Ad Man."
 
@@ -67,7 +67,7 @@ let images = [
         name: "Leaving Home",
         path: leavinghome,
         caption: "I came in from the wilderness, a creature void of form. " +
-        "Come in she said I give you shelter from the storm."
+        "Come in she said. I give you shelter from the storm."
 
     },
 
@@ -92,7 +92,7 @@ let images = [
     {
         name: "The Bloggersphere",
         path: bloggersphere,
-        caption: "A bunch of confused parrots recursively feeding off each others screams. They live with the " +
+        caption: "A bunch of confused parrots recursively feeding off each others' screams. They live with the " +
         "Ad Man, but Mr. New Yorker often comes by to fish for new 'insights' "
 
     }

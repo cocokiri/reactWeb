@@ -6,7 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
 
-import About from "./Sketches";
+import About from "./AboutPage";
 import Play from "./Play";
 import Illustrate from './Illustrate';
 import NotFound from './NotFound';
@@ -31,7 +31,7 @@ class Index extends Component {
                             <Route exact path="/" component={App}/>
                             <Route path="/illustrate" component={Illustrate}/>
                             <Route path="/about" component={About}/>
-                            <Route path="/play" component={Play}/>
+                            {/*<Route path="/play" component={Play}/>*/}
                             <Route path="/sketch" component={Sketches}/>
                             <Route component={NotFound}/>
                         </Switch>
