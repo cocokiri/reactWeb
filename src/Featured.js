@@ -71,6 +71,8 @@ class Featured extends Component {
                     <Textfield text="An interactive spectrogram that can instantly detect the note and chord(!) you are playing.
                 Get a glimpse at the physics of sound while jamming or practicing. Proud to say: It is the most accurate music viz and note detection on the internet"/>
                 </div>
+                <div style={{margin: "2em"}} />
+
             </div>
         );
     }

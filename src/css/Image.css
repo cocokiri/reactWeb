@@ -68,3 +68,14 @@ img {
   flex-wrap: wrap;
   /*width:95vw;*/
 }
+
+  @media (max-width: 600px) {
+    iframe{
+        width: 320px;
+    }
+
+    .splitter {
+      margin-left: 1em;
+      margin-right:1em;
+    }
+  }
