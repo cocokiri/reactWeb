@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+
 import './css/index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
+import {BrowserRouter, Route, Switch, Redirect, Link} from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
 
 import About from "./AboutPage";
@@ -31,8 +32,9 @@ class Index extends Component {
                             <Route exact path="/" component={App}/>
                             <Route path="/illustrate" component={Illustrate}/>
                             <Route path="/about" component={About}/>
-                            {/*<Route path="/play" component={Play}/>*/}
-                            <Route path="/sketch" component={Sketches}/>
+                            <Route path="/play" component={() => window.location = "https://dacapo.io/play"} />
+                            <Route path="/web-piano" component={() => (window.location.href = "https://dacapo.io/web-piano")} />
+                            {/*<Route path="/sketch" component={Sketches}/>*/}
                             <Route component={NotFound}/>
                         </Switch>
                     </div>
