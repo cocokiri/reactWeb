@@ -81,8 +81,8 @@ let images = [
     {
         name: "Social Media",
         path: socialmedia,
-        caption: "The machinery sheds light on pathetic birds, their image distorted by the tools of the platform. 15 minutes of fame and back to the attention battery where eyeballs feed back energy to the " +
-        "distortion machinery. Irony isn't allowed to enter the building."
+        caption: "The machinery sheds light on the pathetic birds, their image distorted by the platform. 15 minutes of fame and back to the attention battery where eyeballs feed energy back into the " +
+        "distortion engine. Irony isn't allowed to enter the building."
     },
     {
         name: "Circuit Physiology",
@@ -92,8 +92,8 @@ let images = [
     {
         name: "The Bloggersphere",
         path: bloggersphere,
-        caption: "A bunch of confused parrots recursively feeding off each other. They live with the " +
-        "Ad Man, but Mr. New Yorker often comes by to fish for their new 'insights' "
+        caption: "A bunch of confused parrots recursively feeding off each others screams. They live with the " +
+        "Ad Man, but Mr. New Yorker often comes by to fish for new 'insights' "
 
     }
 ];

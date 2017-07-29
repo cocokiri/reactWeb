@@ -9,9 +9,9 @@ function TextField(props) { //outfactor
     if (props.text) {
         return (
             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                <figcaption >
+                {props.title && <figcaption >
                     {props.title}
-                </figcaption>
+                </figcaption>}
                 <div className="textfield">
                     {props.text}
                 </div>
