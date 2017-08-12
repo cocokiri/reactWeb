@@ -45,6 +45,6 @@ class Index extends Component {
 }
 
 
-ReactDOM.render(<About />, document.getElementById('root'));
+ReactDOM.render(<Sketches />, document.getElementById('root'));
 registerServiceWorker();
 
