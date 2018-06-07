@@ -11,9 +11,10 @@ const Nav = function (props) {
     return (
             <nav>
                 {/*<a href="/">HOME</a>*/}
-                <Link to='/'>HOME</Link>
-                <Link to='/about'>ABOUT</Link>
+                <a href='https://dacapo.io/sketch' >SKETCH</a>
+                <a href='https://dacapo.io/about'>ABOUT</a>
                 <a href='https://dacapo.io/play' >PLAY</a>
+                <a href='https://dacapo.io/'>HOME</a>
             </nav>
     )
 };

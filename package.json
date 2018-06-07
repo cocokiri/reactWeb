@@ -1,6 +1,7 @@
 {
   "name": "dacaporeact",
   "version": "0.1.0",
+  "homepage": "https://dacapo.io/sketch",
   "private": true,
   "dependencies": {
     "react": "^15.6.1",

@@ -4,6 +4,7 @@ import Textfield from './Textfield'
 import Button from './Button'
 import './css/Image.css';
 import Wrapper from './Wrapper'
+import Nav from './Nav'
 
 import    sk0     from    "./sketch/sketch0.jpg";
 import    sk1     from    "./sketch/sketch1.jpg";
@@ -99,6 +100,10 @@ import    sk90     from    "./sketch/sketch90.jpg";
 import    sk91     from    "./sketch/sketch91.jpg";
 import    sk92     from    "./sketch/sketch92.jpg";
 import    sk93     from    "./sketch/sketch93.jpg";
+import    sk94     from    "./sketch/sketch94.jpg";
+import    sk95     from    "./sketch/sketch95.jpg";
+import    sk96     from    "./sketch/sketch96.jpg";
+import    sk97     from    "./sketch/sketch97.jpg";
 
 
 import notebookpic from "./images/notebooks.jpg"
@@ -189,6 +194,10 @@ let sketches = [
     sk91,
     sk92,
     sk93,
+    sk94,
+    sk95,
+    sk96,
+    sk97,
     sk0,
     sk1,
     sk2,
@@ -215,6 +224,8 @@ const notebookPic = [
 function Sketches(props) {
 
     return (
+        <div>
+        <Nav/>
         <div className="flexContainWrap">
             <Wrapper segment={notebookPic}/>
             <section style={{margin: "5vw"}} />
@@ -228,6 +239,7 @@ function Sketches(props) {
                     })
                 }
             </section>
+        </div>
         </div>
     )
 }

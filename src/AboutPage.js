@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Textfield from './Textfield';
-import Illustrate from './Illustrate'
+import Illustrate from './Illustrate';
+import Nav from './Nav'
 
 function HeaderSplit(props) {
     "use strict";
@@ -21,14 +22,15 @@ class About extends Component {
     render() { //soooo hacky..
         return (
             <div>
+                <Nav/>
                 <Textfield text="Hi, I'm Markus"/>
 
-                <Textfield text=": FINE ARTS :" styling={{background: "black", color:"white"}}/>
-                <Textfield text="+" styling={{background:"red", color:"white", lineHeight:"0em", fontWeight: "bold"}}/>
+                {/*<Textfield text=": FINE ARTS :" styling={{background: "black", color:"white"}}/>*/}
+                {/*<Textfield text="+" styling={{background:"red", color:"white", lineHeight:"0em", fontWeight: "bold"}}/>*/}
 
-                <Textfield text="\ MUSIC \" styling={{background: "black", color:"white"}}/>
-                <Textfield text="x" styling={{background:"red", color:"white", lineHeight:"0em", fontWeight: "bold"}}/>
-                <Textfield text="<CODE/>" styling={{background: "black", color:"white"}}/>
+                {/*<Textfield text="\ MUSIC \" styling={{background: "black", color:"white"}}/>*/}
+                {/*<Textfield text="x" styling={{background:"red", color:"white", lineHeight:"0em", fontWeight: "bold"}}/>*/}
+                {/*<Textfield text="<CODE/>" styling={{background: "black", color:"white"}}/>*/}
                 <div style={{margin: "2em"}} />
 
                 <Illustrate/>

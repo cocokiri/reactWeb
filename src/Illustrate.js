@@ -12,8 +12,9 @@ import practice2 from "./images/BargueHead"
 import adman from "./images/TheAdMan.png";
 import practice from "./images/BargueFoot";
 import theorists from "./images/TheTheorists.png";
-import bloggersphere from "./images/TheBloggersphere.png";
+// import bloggersphere from "./images/TheBloggersphere.png";
 import anim from "./images/Anim";
+import unequal from "./images/Inequality_low.jpg"
 
 let images = [
     {
@@ -28,6 +29,12 @@ let images = [
         path: adman,
         caption: "The Ad Man behind his mask. Anonymously attacking through his marketing channel. " +
         "Our senses too naked, our hands too short."
+    },
+
+    {
+        name: "Unequal",
+        path: unequal,
+        caption: "Monopolies. Cumulative Advantages. Inequality Gap. Extremistan vs Mediocristan. Winner Take All."
     },
 
     {
@@ -75,7 +82,7 @@ let images = [
         name: "Exploitation",
         path: exploit,
         caption: "Why stop with gestation crates and mass slaughter? Let’s use biotechnology to not only " +
-        "torture but actively humiliate fellow sentient beings. Teapot camels are a solid business model"
+        "torture but actively humiliate fellow sentient beings. Teapot camels are a solid business"
 
     },
     {
@@ -89,13 +96,13 @@ let images = [
         path: circuitBody,
         caption: "The body as electric system. Explained in 'Induction' vid"
     },
-    {
-        name: "The Bloggersphere",
-        path: bloggersphere,
-        caption: "A bunch of confused parrots recursively feeding off each others' screams. They live with the " +
-        "Ad Man, but Mr. New Yorker often comes by to fish for new 'insights' "
-
-    }
+    // {
+    //     name: "The Bloggersphere",
+    //     path: bloggersphere,
+    //     caption: "A bunch of confused parrots recursively feeding off each others' screams. They live with the " +
+    //     "Ad Man, but Mr. New Yorker often comes by to fish for new 'insights' "
+    //
+    // }
 ];
 
 class Illustrate extends Component {
